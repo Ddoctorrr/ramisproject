@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technologies - EcoTech Solutions</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/technologies.css">
+    <link rel="stylesheet" href="css/components/tech-card.css">
+    <link rel="stylesheet" href="css/components/tech-modal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- JavaScript Modules -->
+    <script type="module">
+      // Import main technologies script
+      import './js/technologies.js';
+    </script>
+  </head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-content">
+      <div class="nav-brand">
+        <i data-lucide="leaf" class="brand-icon"></i>
+        <span>EcoTech Solutions</span>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="technologies.html" class="active">Technologies</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="tech-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="animate-fade-in">Revolutionary Green Technologies</h1>
+      <p class="animate-fade-in animation-delay-200">
+        Discover our cutting-edge machines and innovations that are reshaping the future of sustainable energy.
+      </p>
+      <button class="cta-button animate-fade-in animation-delay-400" onclick="document.getElementById('technologies').scrollIntoView({behavior: 'smooth'})">
+        Explore Our Solutions
+        <i data-lucide="arrow-right"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- Technologies Grid -->
+  <section id="technologies" class="technologies-section">
+    <div class="container">
+      <h2>Our Technologies</h2>
+      <div class="technologies-grid" id="technologiesGrid">
+        <!-- Technology cards will be inserted by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="footer-brand">
+          <i data-lucide="leaf"></i>
+          <span>EcoTech Solutions</span>
+        </div>
+        <p>Pioneering sustainable energy solutions for a better tomorrow.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/technologies">Technologies</a></li>
+          <li><a href="/news">News</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: info@ecotechsolutions.com</p>
+        <p>Phone: (555) 123-4567</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="currentYear"></span> EcoTech Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

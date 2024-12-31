@@ -1,0 +1,131 @@
+.tech-card {
+    background: var(--color-primary);
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tech-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .tech-card-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .tech-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .tech-card:hover .tech-card-image img {
+    transform: scale(1.1);
+  }
+  
+  .tech-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, var(--color-primary), transparent);
+  }
+  
+  .tech-card-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--color-accent);
+    padding: 0.75rem;
+    border-radius: 50%;
+    color: var(--color-primary);
+  }
+  
+  .tech-card-content {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tech-card-content h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-primary-light);
+    margin-bottom: 0.5rem;
+  }
+  
+  .tech-card-line {
+    width: 3rem;
+    height: 0.25rem;
+    background: var(--color-accent);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tech-card-content p {
+    color: var(--color-primary-light);
+    opacity: 0.8;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .tech-card-benefits {
+    display: grid;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .tech-benefit {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    background: var(--color-primary-dark);
+    border-radius: 0.5rem;
+    color: var(--color-primary-light);
+  }
+  
+  .tech-benefit i {
+    color: var(--color-accent);
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+  }
+  
+  .learn-more-btn {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    background: var(--color-primary-dark);
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--color-accent);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .learn-more-btn:hover {
+    background: var(--color-accent);
+    color: var(--color-primary-dark);
+  }
+  
+  .learn-more-btn i {
+    width: 1.25rem;
+    height: 1.25rem;
+    transition: transform 0.2s;
+  }
+  
+  .learn-more-btn:hover i {
+    transform: translateX(4px);
+  }

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - EcoTech Solutions</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-content">
+      <div class="nav-brand">
+        <i data-lucide="leaf" class="brand-icon"></i>
+        <span>EcoTech Solutions</span>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="technologies.html" class="active">Technologies</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-subtitle animate-fade-in">Our Story</span>
+      <h1 class="hero-title animate-fade-in animation-delay-200">
+        Innovating for a
+        <span>Sustainable Future</span>
+      </h1>
+    </div>
+    <div class="scroll-indicator">
+      <i data-lucide="chevron-down"></i>
+    </div>
+    
+    <!-- Stats Cards -->
+    <div class="stats-cards">
+      <div class="stats-card">
+        <span class="stats-number">15+</span>
+        <p class="stats-label">Countries Worldwide</p>
+      </div>
+      <div class="stats-card">
+        <span class="stats-number">40%</span>
+        <p class="stats-label">Emission Reduction</p>
+      </div>
+      <div class="stats-card">
+        <span class="stats-number">100+</span>
+        <p class="stats-label">Partner Companies</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="about-content">
+    <!-- Mission Section -->
+    <section class="mission-section">
+      <div class="container">
+        <div class="mission-grid">
+          <div class="mission-text">
+            <h2>Our Mission</h2>
+            <p class="mission-description">
+              At EcoTech Solutions, we're committed to revolutionizing the oil industry through sustainable practices and innovative technologies. Our mission is to bridge the gap between traditional energy needs and environmental responsibility.
+            </p>
+            
+            <div class="mission-points">
+              <div class="mission-point">
+                <i data-lucide="leaf"></i>
+                <div>
+                  <h3>Environmental Impact</h3>
+                  <p>Our technologies reduce emissions by up to 40% while maintaining optimal performance.</p>
+                </div>
+              </div>
+              
+              <div class="mission-point">
+                <i data-lucide="globe"></i>
+                <div>
+                  <h3>Global Reach</h3>
+                  <p>Operating in 15+ countries, making sustainable solutions accessible worldwide.</p>
+                </div>
+              </div>
+              
+              <div class="mission-point">
+                <i data-lucide="award"></i>
+                <div>
+                  <h3>Industry Leadership</h3>
+                  <p>Setting new standards in eco-friendly oil processing and sustainable practices.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mission-image">
+            <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Sustainable Technology">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section">
+      <div class="container">
+        <h2>Our Journey</h2>
+        <div class="timeline" id="timeline">
+          <!-- Timeline items will be inserted by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+      <div class="container">
+        <h2>Our Team</h2>
+        <div class="team-grid" id="teamGrid">
+          <!-- Team members will be inserted by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements-section">
+      <div class="container">
+        <h2>Certifications & Achievements</h2>
+        <div class="achievements-grid" id="achievementsGrid">
+          <!-- Achievements will be inserted by JavaScript -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="footer-brand">
+          <i data-lucide="leaf"></i>
+          <span>EcoTech Solutions</span>
+        </div>
+        <p>Pioneering sustainable energy solutions for a better tomorrow.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/technologies">Technologies</a></li>
+          <li><a href="/news">News</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: info@ecotechsolutions.com</p>
+        <p>Phone: (555) 123-4567</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="currentYear"></span> EcoTech Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/about.js"></script>
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>

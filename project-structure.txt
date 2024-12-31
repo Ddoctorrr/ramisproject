@@ -1,0 +1,70 @@
+src/
+├── html/
+│   ├── about.html
+│   ├── admin_login.html
+│   ├── admin.html
+│   ├── article.html
+│   ├── contact.html
+│   ├── index.html
+│   ├── news.html
+│   └── technologies.html
+│
+├── js/
+│   ├── components/
+│   │   ├── ArticleCard.js
+│   │   ├── CategoryFilter.js
+│   │   └── Modal.js
+│   ├── data/
+│   │   └── articles.js
+│   ├── utils/
+│   │   ├── filters.js
+│   │   └── validators.js
+│   ├── admin.js
+│   ├── article.js
+│   ├── contact.js
+│   ├── main.js
+│   ├── news.js
+│   └── technologies.js
+│
+├── css/
+│   ├── components/
+│   │   ├── article-card.css
+│   │   ├── category-filter.css
+│   │   └── modal.css
+│   ├── pages/
+│   │   ├── about.css
+│   │   ├── admin.css
+│   │   ├── article.css
+│   │   ├── contact.css
+│   │   ├── home.css
+│   │   ├── news.css
+│   │   └── technologies.css
+│   ├── animations.css
+│   └── main.css
+│
+├── python/
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── newsletter.py
+│   │   ├── news.py
+│   │   └── technology.py
+│   ├── modules/
+│   │   ├── contact.py
+│   │   ├── news.py
+│   │   ├── newsletter.py
+│   │   └── technologies.py
+│   ├── utils/
+│   │   ├── email.py
+│   │   └── validators.py
+│   ├── app.py
+│   ├── config.py
+│   └── requirements.txt
+│
+└── config/
+    ├── eslint.config.js
+    ├── postcss.config.js
+    ├── tailwind.config.js
+    ├── tsconfig.app.json
+    ├── tsconfig.json
+    ├── tsconfig.node.json
+    └── vite.config.ts

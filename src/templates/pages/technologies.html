@@ -1,0 +1,50 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}Technologies - EcoTech Solutions{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="/css/technologies.css">
+{% endblock %}
+
+{% block content %}
+<section class="tech-hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="animate-fade-in">Revolutionary Green Technologies</h1>
+    <p class="animate-fade-in animation-delay-200">
+      Discover our cutting-edge machines and innovations that are reshaping the future of sustainable energy.
+    </p>
+  </div>
+</section>
+
+<section id="technologies" class="technologies-section">
+  <div class="container">
+    <h2>Our Technologies</h2>
+    <div class="technologies-grid" id="technologiesGrid"></div>
+  </div>
+</section>
+
+<section class="case-studies-section">
+  <div class="container">
+    <h2>Success Stories</h2>
+    <div class="case-studies-grid" id="caseStudiesGrid"></div>
+  </div>
+</section>
+
+<section class="testimonials-section">
+  <div class="container">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonials-grid" id="testimonialsGrid"></div>
+  </div>
+</section>
+
+<div id="techModal" class="modal">
+  <div class="modal-content">
+    <div id="modalContent"></div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="/js/technologies/index.js" type="module"></script>
+{% endblock %}

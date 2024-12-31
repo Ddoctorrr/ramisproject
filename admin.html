@@ -1,0 +1,61 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - EcoTech Solutions</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="admin-body">
+  <div class="admin-container">
+    <!-- Admin Header -->
+    <header class="admin-header">
+      <div class="admin-brand">
+        <i data-lucide="shield" class="admin-icon"></i>
+        <span>Admin Panel</span>
+      </div>
+      <button id="logoutBtn" class="logout-btn">
+        <i data-lucide="log-out"></i>
+        Logout
+      </button>
+    </header>
+
+    <!-- Messages Section -->
+    <main class="admin-content">
+      <h1>Contact Messages</h1>
+      
+      <div class="messages-filters">
+        <input type="text" id="searchInput" placeholder="Search messages...">
+        <select id="statusFilter">
+          <option value="all">All Status</option>
+          <option value="new">New</option>
+          <option value="read">Read</option>
+          <option value="archived">Archived</option>
+        </select>
+      </div>
+
+      <div class="messages-list" id="messagesList">
+        <!-- Messages will be inserted here by JavaScript -->
+      </div>
+    </main>
+  </div>
+
+  <!-- Message Modal -->
+  <div id="messageModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="js/admin.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
+```

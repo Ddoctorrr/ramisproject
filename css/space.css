@@ -1,0 +1,93 @@
+/* Space background */
+#spaceBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  background-color: #000;
+}
+
+.content-overlay {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Space-themed components */
+.space-nav {
+  background: rgba(11, 12, 16, 0.8) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(102, 252, 241, 0.1);
+}
+
+.space-card {
+  background: rgba(31, 40, 51, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(102, 252, 241, 0.1);
+  box-shadow: 0 0 20px rgba(102, 252, 241, 0.1);
+  transition: all 0.3s ease;
+}
+
+.space-card:hover {
+  border-color: rgba(102, 252, 241, 0.3);
+  box-shadow: 0 0 30px rgba(102, 252, 241, 0.2);
+}
+
+/* Glowing text effect */
+.glow-text {
+  color: var(--color-primary-light);
+  text-shadow: 0 0 10px rgba(102, 252, 241, 0.5),
+               0 0 20px rgba(102, 252, 241, 0.3),
+               0 0 30px rgba(102, 252, 241, 0.2);
+}
+
+/* Adjust sections for space theme */
+.features {
+  padding: 8rem 0;
+}
+
+.newsletter {
+  padding: 4rem 0;
+  margin-top: auto;
+}
+
+.footer {
+  margin-top: auto;
+  background: rgba(11, 12, 16, 0.9);
+}
+
+/* Enhanced animations */
+.feature-card {
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-card i {
+  color: var(--color-accent);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover i {
+  transform: rotate(360deg);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .features {
+    padding: 4rem 0;
+  }
+  
+  .nav-links.active {
+    background: rgba(11, 12, 16, 0.95);
+    backdrop-filter: blur(10px);
+  }
+}

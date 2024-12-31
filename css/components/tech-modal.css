@@ -1,0 +1,214 @@
+/* Modal Base */
+.tech-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.95);
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    background: var(--color-primary);
+    border-radius: 1rem;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+  }
+  
+  .tech-modal.active {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .tech-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .tech-modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Modal Header */
+  .tech-modal-header {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .tech-modal-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .tech-modal-title-section {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: linear-gradient(to top, var(--color-primary), transparent);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .tech-modal-title-section h2 {
+    color: var(--color-primary-light);
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .tech-modal-badge {
+    background: var(--color-accent);
+    padding: 0.75rem;
+    border-radius: 50%;
+  }
+  
+  .tech-modal-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--color-primary);
+  }
+  
+  /* Modal Body */
+  .tech-modal-body {
+    padding: 2rem;
+  }
+  
+  .tech-modal-section {
+    margin-bottom: 2rem;
+  }
+  
+  .tech-modal-section h3 {
+    color: var(--color-accent);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .tech-modal-section p {
+    color: var(--color-primary-light);
+    line-height: 1.6;
+  }
+  
+  /* Benefits List */
+  .tech-modal-benefits {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .tech-modal-benefits li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--color-primary-light);
+    background: var(--color-primary-dark);
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .benefit-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--color-accent);
+    flex-shrink: 0;
+  }
+  
+  /* Specifications */
+  .tech-modal-specs {
+    display: grid;
+    gap: 0.75rem;
+  }
+  
+  .tech-modal-specs li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--color-primary-light);
+  }
+  
+  .spec-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--color-accent);
+    flex-shrink: 0;
+  }
+  
+  /* Applications */
+  .tech-modal-applications {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .application-card {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: var(--color-primary-dark);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: var(--color-primary-light);
+  }
+  
+  .application-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--color-accent);
+    flex-shrink: 0;
+  }
+  
+  /* Close Button */
+  .tech-modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--color-primary-dark);
+    border: none;
+    color: var(--color-primary-light);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .tech-modal-close:hover {
+    background: var(--color-accent);
+    color: var(--color-primary);
+    transform: rotate(90deg);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 640px) {
+    .tech-modal {
+      width: 95%;
+    }
+  
+    .tech-modal-header {
+      height: 150px;
+    }
+  
+    .tech-modal-title-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .tech-modal-applications {
+      grid-template-columns: 1fr;
+    }
+  }
